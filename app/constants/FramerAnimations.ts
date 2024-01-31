@@ -152,7 +152,7 @@ export const whileInviewStagger = {
 
 const bounce = {
 	initial: { y: -200 },
-	animate: { y: 0, transition: { type: "spring", stiffness: 100 } },
+	animate: { y: 0, transition: { type: "spring", stiffness: 40  } },
 	once: { once: true },
 };
 

@@ -65,4 +65,19 @@ export const projectsData = [
 		projectImage: "/stackweb.jpeg",
 		features: [],
 	},
+	{
+		id: 7,
+		title: "Saas Theme Application",
+		description:
+			"This sleek and versatile SaaS theme application, built with Next.js, TypeScript, and Tailwind CSS, empowers developers and designers to streamline template creation and sales. It's packed with features to showcase your products effectively, attract customers, and boost conversions.",
+		skills: "Nextjs, Typescript, Taiwindcss",
+		links: "https://envato-saas-template-sain.vercel.app/",
+		projectImage: "/saas-template.jpeg",
+		features: [
+			"Pre-built components and templates for rapid creation",
+			"Customizable settings for branding and personalization",
+			"Intuitive visual editor or drag-and-drop interface",
+			"Version control and collaboration features",
+		],
+	},
 ];

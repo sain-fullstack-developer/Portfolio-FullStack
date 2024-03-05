@@ -30,6 +30,12 @@ import {
 	animatingBounce,
 	whileInviewBounce,
 } from "../constants/FramerAnimations";
+import {
+	AboutAdditional,
+	AboutDescription,
+	Designation,
+	DeveloperName,
+} from "../constants";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -70,9 +76,9 @@ function ScrollHorizontally() {
 						<motion.div className="text-center bg-primary p-12 text-gray-900 w-full grid place-items-center">
 							<div>
 								<h1 className="text-[4rem] xs:text-[8rem] md:text-[12rem]">
-									Sainath
+									{DeveloperName}
 								</h1>
-								<h2 className="text-4xl md:text-8xl">Full Stack Developer</h2>
+								<h2 className="text-4xl md:text-8xl">{Designation}</h2>
 							</div>
 							<motion.div className="grid grid-cols-4 place-items-center sm:flex gap-2 sm:gap-8 py-4">
 								<FaHtml5 className="w-8 h-8 md:w-10 md:h-10" />
@@ -113,13 +119,7 @@ function ScrollHorizontally() {
 											duration: 0.5,
 											delay: 0.6,
 										}}>
-										Thank you for visiting my website. Allow me to introduce
-										myself. My name is Sainath Kommagoni. Throughout my
-										experience, I have acquired valuable skills in programming
-										languages such as{" "}
-										<span className="text-yb">JavasScript</span>,{" "}
-										<span className="text-yb">HTML </span>, and{" "}
-										<span className="text-yb">CSS</span>.{" "}
+										{AboutDescription}
 									</motion.p>
 									<br />
 
@@ -140,18 +140,7 @@ function ScrollHorizontally() {
 											duration: 0.5,
 											delay: 0.7,
 										}}>
-										Moreover, I have a deep passion for building web
-										applications. I have acquired proficiency in various
-										technologies such as{" "}
-										<span className="text-yb">Next.js </span>,{" "}
-										<span className="text-yb">Typescript </span>,{" "}
-										<span className="text-yb">React.js </span>,{" "}
-										<span className="text-yb">Redux.js </span>, and{" "}
-										<span className="text-yb">TailwindCSS</span>. However, it
-										can be quite a rollercoaster when dealing with these
-										ever-evolving frameworks. Just when you think you&#39;ve
-										mastered them, Next.js swoops in with its fancy new app
-										directory, leaving you scratching your head.
+										{AboutAdditional}
 									</motion.p>
 									<br />
 								</div>
@@ -506,11 +495,9 @@ function ScrollHorizontally() {
 									className="text-center sm:text-left bg-primary p-12 text-gray-900 w-full grid place-items-center">
 									<div>
 										<h1 className="text-[4rem] xs:text-[8rem] md:text-[12rem]">
-											Sainath
+											{DeveloperName}
 										</h1>
-										<h2 className="text-4xl md:text-8xl">
-											Full Stack Developer
-										</h2>
+										<h2 className="text-4xl md:text-8xl">{Designation}</h2>
 									</div>
 									<motion.div className="grid grid-cols-4 place-items-center sm:flex gap-2 sm:gap-8 py-4">
 										<FaHtml5 className="w-8 h-8 md:w-10 md:h-10" />
@@ -553,13 +540,7 @@ function ScrollHorizontally() {
 													duration: 0.5,
 													delay: 0.6,
 												}}>
-												Thank you for visiting my website. Allow me to introduce
-												myself. My name is Sainath Kommagoni. Throughout my
-												experience, I have acquired valuable skills in
-												programming languages such as{" "}
-												<span className="text-yb">JavasScript</span>,{" "}
-												<span className="text-yb">HTML </span>, and{" "}
-												<span className="text-yb">CSS</span>.{" "}
+												{AboutDescription}
 											</motion.p>
 											<br />
 
@@ -580,18 +561,7 @@ function ScrollHorizontally() {
 													duration: 0.5,
 													delay: 0.7,
 												}}>
-												Moreover, I have a deep passion for building web
-												applications. I have acquired proficiency in various
-												technologies such as{" "}
-												<span className="text-yb">Next.js </span>,{" "}
-												<span className="text-yb">Typescript </span>,{" "}
-												<span className="text-yb">React.js </span>,{" "}
-												<span className="text-yb">Redux.js </span>, and{" "}
-												<span className="text-yb">TailwindCSS</span>. However,
-												it can be quite a rollercoaster when dealing with these
-												ever-evolving frameworks. Just when you think you&#39;ve
-												mastered them, Next.js swoops in with its fancy new app
-												directory, leaving you scratching your head.
+												{AboutAdditional}
 											</motion.p>
 											<br />
 										</div>
@@ -934,7 +904,7 @@ function ScrollHorizontally() {
 										key={index}
 										ref={skills}
 										className="skill-set px-12 w-screen h-full bg-transparent ns-horizontal-section__item flex justify-center items-center z-50">
-										<div className="text-center sm:text-left bg-primary p-6 text-gray-900 w-full md:w-[90%] md:h-[90%]">
+										<div className="text-center sm:text-left bg-primary p-6 text-gray-900 w-full md:w-[90%] md:h-fit">
 											<h1 className="text-4xl md:text-8xl text-center">{`Project-${
 												index + 1
 											}`}</h1>
